@@ -1,0 +1,123 @@
+.name_watches_form {
+	display: flex;
+}
+
+.btn_close_watch {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.btn_close_watch:hover {
+	cursor: pointer;
+}
+
+.watch_wrapper {
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: fit-content;
+	position: relative;
+}
+
+.watch_header {
+	text-align: center;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clock {
+	width: 150px;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(https://antonaniskovich.ru/filearticle/chasy-na-javascript/file/clock.png);
+	/* radial-gradient(circle, rgb(37, 73, 90) 0%, rgb(25, 48, 60) 11%, rgba(9,25,33,1) 38%); */
+	background-size: cover;
+	border: 1px black solid;
+	border-radius: 50%;
+	/* box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35),
+	inset 0 -15px 15px #191919,
+	0 15px 15px rgba(134, 134, 134, 0.35),
+	inset 0 15px 15px #191919 */
+	;
+}
+
+.clock:before {
+	content: '';
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	z-index: 999;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+	position: absolute;
+}
+
+.clock .hour,
+.hr {
+	width: 10px;
+	height: 110px;
+}
+
+.clock .min,
+.mn {
+	width: 90px;
+	height: 120px;
+}
+
+.clock .sec,
+.sc {
+	width: 130px;
+	height: 100px;
+}
+
+.hr,
+.mn,
+.sc {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.hr:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 60px;
+	background-color: #00b3ff;
+	z-index: 10;
+	border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 70px;
+	background-color: #a1e216;
+	z-index: 11;
+	border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 60px;
+	background-color: rgb(238, 12, 12);
+	z-index: 12;
+	border-radius: 6px 6px 0 0;
+}
